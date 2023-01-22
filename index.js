@@ -1,7 +1,7 @@
 const express = require("express")
 const PORT = 7080;
+require("dotenv").config();
 const cors = require("cors")
-// require("dotenv").config();
 const {userController} = require("./routes/user.route")
 const {connection} = require("./config/db")
 const {authentication} = require("./middlewares/authentification");
